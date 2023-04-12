@@ -5,6 +5,7 @@
 }
 html{
     font-family:  Helvetica, Arial,sans-serif;
+    scroll-behavior: smooth;
 }
 
 .clear{
@@ -13,6 +14,44 @@ html{
 .text-white{
     color: #fff !important;
 }
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.333%;
+}
+
+
 
 #main{
 
@@ -130,6 +169,7 @@ html{
 #content{
     height: 1000px;
     color: #000;
+    min-height: 500%;
 }
 
 #content .content-section{
@@ -137,6 +177,7 @@ html{
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 48px;
 }
 
 #content .section-heading{
@@ -266,10 +307,54 @@ html{
     background-color: #ccc;
 }
 
+/* contact */
 
+.contact-content{
+    margin-top: 48px;
+    
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc ;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn{
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+.contact-form .form-submit-btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* map section */
+.map-section img{
+    width: 100%;
+    object-fit: cover;
+}
 
 #footer{
-    
+    height: 500px;
 }
 
 .modal{
