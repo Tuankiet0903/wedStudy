@@ -1,0 +1,43 @@
+
+
+
+body{
+  font-family: Roboto, Arial;
+}
+
+.youtube-video-preview{
+  display: inline-block;
+  width:  300px;
+  margin-right: 20px;
+  vertical-align: top;
+
+}
+
+.youtube-img-thumbnail{
+    width: 300px;
+}
+.youtube-author-image{
+  display: inline-block;
+}
+.youtube-container{
+  width: 300px;
+  display: inline-block;
+}
+.youtube-title{
+  font-weight: bold;
+}
+.youtube-author{
+  font-size: 12;
+  color: #aaa;
+}
+.youtube-time-public{
+  font-size: 12;
+  color: #aaa;
+}
+.youtube-view::before{
+  content: "•";
+}
+.youtube-view{
+  font-size: 12;
+  color: #aaa;
+}
