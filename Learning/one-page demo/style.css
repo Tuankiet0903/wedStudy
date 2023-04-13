@@ -65,6 +65,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav{
@@ -122,21 +123,35 @@ html{
 #nav .nav-arrow-down{
     font-size: 14px;
 }
-
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
+    padding: 13px 21px;
+    color: #fff;
+}
+#header .mobile-menu-btn{
+    display: none;
 }
 
+
 #header .search-btn:hover{
-    background-color: #f44336;
+    background-color:#f44336 ;
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .menu-icon
 #header .search-icon{
     color: #fff;
     font-size: 16px;
     line-height: 46px;
-    padding: 0 21px;
 }
 
 #slider{
@@ -174,10 +189,13 @@ html{
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -461,4 +479,31 @@ html{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* mobile */
+
+@media (max-width: 740px) { 
+    #nav{
+        display: block;
+    }
+
+    #nav > li{
+        display: block;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
 }
