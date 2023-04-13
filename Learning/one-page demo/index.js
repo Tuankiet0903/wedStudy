@@ -44,7 +44,11 @@ mobileMenu.onclick = function(){
 const menuItems = document.querySelectorAll('#nav li a[href*="#"');
 for(let i = 0; i < menuItems.length; i++){
     let menuItem = menuItems[i];
+    
     menuItem.onclick = function(){
-        header.style.height = null;
+        let isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+        if(!isParentMenu){
+            header.style.height = null;
+        }
     }
 }
