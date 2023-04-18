@@ -1,7 +1,8 @@
 :root{
     --white-color: #fff;
-    --black-color: #000;
-    --text-color: #333
+    --black-color: #000000;
+    --text-color: #333;
+    --primary-color: #ee4d2d;
 }
 
 *{
@@ -28,4 +29,14 @@ grid__full-width{
 grid__row{
     display: flex;
     flex-wrap: wrap;
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
