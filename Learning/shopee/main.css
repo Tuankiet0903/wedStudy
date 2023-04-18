@@ -17,6 +17,7 @@
 .header__navbar-item{
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
 }
 
 .header__navbar-item-link,
@@ -27,10 +28,22 @@
     text-decoration: none;
 }
 
+.header__navbar-item-link,
+.header__navbar-item,
+.header__navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+}
+
 .header__navbar-item-link:hover,
+.header__navbar-icon-link:hover,
 .header__navbar-item:hover{
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
+}
+
+.header__navbar-item--has-qr:hover .header__qr{
+    display: block;
 }
 
 .header__navbar-item--strong{
@@ -51,5 +64,53 @@
     color: var(--white-color);
     text-decoration: none;
 }
+
+.heaeder__navbar-icon{
+    font-size: 1.8rem;
+    margin: 0 5px;
+}
+
+.header__navbar-title--no-poiter{
+    cursor: text;
+    color: var(--white-color);
+}
+
+.header__qr{
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    display: none;
+}
+
+.header__qr-img{
+    width: 100%;
+}
+
+.header__qr-link:nth-child(n+1){
+    margin-left: 11px;
+}
+
+.header__qr-link:nth-child(n+2){
+    margin-right: 11px;
+}
+
+.header__qr-link{
+
+}
+
+.header__qr-apps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__qr-download-img{
+    height: 14px;
+}
+
 
 
