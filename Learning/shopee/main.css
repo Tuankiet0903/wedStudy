@@ -131,7 +131,8 @@
     background-color: var(--white-color);
     border: 1px solid #d3d3d3;
     animation: headerNotifyGrowth ease-in 0.2s;
-    transform-origin: calc(100%  - 20px) top; 
+    transform-origin: calc(100%  - 20px) top;
+    will-change: opacity, transform;
     display: none;
 }
 
@@ -155,6 +156,27 @@
         transform: scale(1);
     }
 }
+
+.header__notify::before{
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 0;
+    top: -27px;
+}
+
+.header__notify::after{
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: -16px;
+    width: 90px;
+    height: 20px;
+}
+
 
 .header__notify-header h3{
     color: #999;
@@ -219,4 +241,11 @@
     font-size: 1.6rem;
     font-weight: 400;
 }   
+
+
+
+
+
+
+
 
