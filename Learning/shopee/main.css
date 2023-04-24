@@ -206,7 +206,7 @@
     width: 100%;
     padding: 12px;
     text-decoration: none;
-    background-color: rgba(238, 77, 45, 0.05);
+    background-color: rgba(238, 77, 45, 0.D);
 }
 .header__notify-img{
     width: 48px;
@@ -304,6 +304,39 @@
     color: var(--primary-color);
 }
 
-.auth-form__control{
+.auth-form__controls{
+    display: flex;
+    justify-content: flex-end;
     margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.auth-form__controls-back{
+    margin-right: 8px;
+}
+
+.auth-form__socials{
+    background-color: #f5f5f5;
+    padding: 12px 36px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn--with-icon{
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.facebook-link{
+    background-color: rgb(56, 88, 152) ;
+    color: #fff;
+}
+
+.social-icon{
+    padding-right: 4px;
 }
