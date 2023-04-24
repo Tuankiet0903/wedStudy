@@ -78,9 +78,22 @@ grid__row{
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 0;
+    outline: none;
+    color: var(--text-color);
+}
+
+.btn.btn-normal:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn.btn--primary{
     color: var(--white-color);
     background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 12px;
 }
